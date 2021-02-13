@@ -1,3 +1,3 @@
-# stateofcobalt
+# State of Cobalt
 
-This is a working draft. More to come soon.
+This is a working draft of a research project, more info to follow :)
