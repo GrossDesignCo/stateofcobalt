@@ -1,5 +1,4 @@
-:root,
-.light {
+:root {
   --cobalt-blue: #0062eb;
   --dark-slate: #355685;
   --impressively-light-teal: #00ddeb;
@@ -7,9 +6,11 @@
   --mango-orange: #ed693b;
 
   --bg-color: #e9ecf2;
-  --text-color: #444;
+  --text-color: #333;
   --link-color: #0062eb;
   --heading-color: #222;
+  --caption-color: #777;
+  --accent-color: #aaa;
 
   --spacer: clamp(2.827rem, 7vw, 5.653rem);
 }
@@ -19,9 +20,11 @@
     --cobalt-blue: #1476ff;
 
     --bg-color: #12151b;
-    --text-color: #888;
+    --text-color: #ccc;
     --link-color: #fff;
     --heading-color: #eee;
+    --caption-color: #999;
+    --accent-color: #333;
   }
 }
 
@@ -32,27 +35,30 @@
   font-family: "Shippori Mincho", serif;
   margin: 0;
   padding: 0;
-  line-height: 1.414;
+  line-height: 1.65;
 }
 
-html,
+/* TODO: Revisit scrolling styles, test on mobile */
 body {
   font-size: 100%;
   color: var(--text-color);
   background-color: var(--bg-color);
+  overflow-y: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
-hgroup,
-section {
+article {
   scroll-snap-align: start;
+}
+
+section {
   padding: var(--spacer);
 }
 
 footer {
-  clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+  clip-path: polygon(0.75rem 0, 100% 0, 100% 100%, 0 100%, 0 0.75rem);
   background-color: var(--bg-color);
   position: fixed;
   bottom: 0;
@@ -60,6 +66,7 @@ footer {
   padding: 0.5rem 1rem;
 }
 
+/* Typography */
 p {
   margin-bottom: 1rem;
   max-width: 50ch;
@@ -104,9 +111,49 @@ a {
   color: var(--link-color);
 }
 
+svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+/* Tables */
+table {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+th,
+td {
+  padding: 0.5rem 2rem;
+}
+
+th:first-child,
+td:first-child {
+  padding-inline-start: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-inline-end: 0;
+}
+
+th {
+  color: var(--caption-color);
+  text-align: start;
+  font-weight: 400;
+}
+
+td {
+  color: var(--heading-color);
+  font-size: 1.414rem;
+  font-weight: 700;
+}
+
 /* Hero */
 [class*="hero-"] {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
