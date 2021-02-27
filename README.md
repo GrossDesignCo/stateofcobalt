@@ -2,12 +2,48 @@
 
 This is a working draft of a research project, more info to follow :)
 
-Technical TODOs:
+## Local Setup
 
-1. Set up react + react-router
-2. Create pages:
-   1. Program Pitch (fullpage vertical scroll-snapped info site)
-   2. State of Cobalt - 2021 (in-depth research report)
-3. Create GitHub organization
-   1. Get Josh/Sarah on org
-   2. Find appropriate home for pitch deck vs research
+First, run the development server:
+
+```bash
+npm i
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Publish to https://stateofcobalt.org
+
+First, build locally:
+
+```bash
+npm run build
+```
+
+This will generate the `/docs` folder (which is one of the only subdirectories GitHub allows for it's pages. If/when we move to AWS this'll change to next.js's default `/out`).
+
+Then, checkout to a fresh branch, commit your changes, and create a PR.
+
+```bash
+git checkout [user]/[branch-name]
+git add .
+git commit -m "[briefly state the changes]"
+git push
+```
+
+Example:
+
+```bash
+git checkout matt/update-readme
+git add .
+git commit -m "add examples to readme file"
+git push
+```
+
+## Special Thanks
+
+Credit for useful things:
+
+1. https://systemuicons.com/
+1. https://nextjs.org/

@@ -1,0 +1,35 @@
+:root {
+  --spacer: clamp(2.827rem, 7vw, 5.653rem);
+  --icon-size: 1.5em;
+  --font-size--h1: clamp(2.827rem, 7vw, 5.653rem);
+  --font-size--h2: clamp(1.999rem, 4.95vw, 3.998rem);
+  --font-size--h3: clamp(1.414rem, 3.5vw, 2.827rem);
+  --font-size--h4: clamp(1rem, 2.48vw, 1.999rem);
+  --font-size--h5: clamp(1rem, 1.75vw, 1.414rem);
+
+  --cobalt-blue: #0062eb;
+  --dark-slate: #355685;
+  --impressively-light-teal: #00ddeb;
+  --blood-orange: #b82412;
+  --mango-orange: #ed693b;
+
+  --bg-color: #f6f9ff;
+  --text-color: #333;
+  --link-color: #222;
+  --heading-color: #222;
+  --caption-color: rgba(0, 0, 0, 0.6);
+  --accent-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cobalt-blue: #0062eb;
+
+    --bg-color: #12151b;
+    --text-color: #ccc;
+    --link-color: #fff;
+    --heading-color: #eee;
+    --caption-color: rgba(255, 255, 255, 0.6);
+    --accent-color: rgba(255, 255, 255, 0.2);
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "stateofcobalt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export -o docs/ && cp infra/.nojekyll docs/.nojekyll && cp infra/CNAME docs/CNAME",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "change-case": "^4.1.2",
+    "next": "10.0.7",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}
