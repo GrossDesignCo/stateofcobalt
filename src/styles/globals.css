@@ -7,20 +7,14 @@
   line-height: 1.65;
 }
 
-/* TODO: Revisit scrolling styles, test on mobile */
 html,
 body {
   font-size: 100%;
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-y: auto;
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-}
-
-article {
-  scroll-snap-align: start;
 }
 
 section {
@@ -82,7 +76,8 @@ h5 {
 }
 
 a {
-  color: var(--link-color);
+  color: inherit;
+  text-decoration: none;
 }
 
 svg {
@@ -152,25 +147,25 @@ td {
   color: var(--text-color);
 }
 
-.hero-1 {
-  --bg-color: var(--cobalt-blue);
+.hero-1,
+.hero-2,
+.hero-3 {
+  --caption-color: rgba(255, 255, 255, 0.6);
   --text-color: #eee;
   --link-color: #fff;
   --heading-color: #fff;
+}
+
+.hero-1 {
+  --bg-color: var(--cobalt-blue);
 }
 
 .hero-2 {
   --bg-color: var(--dark-slate);
-  --text-color: #eee;
-  --link-color: #fff;
-  --heading-color: #fff;
 }
 
 .hero-3 {
   --bg-color: var(--mango-orange);
-  --text-color: #eee;
-  --link-color: #fff;
-  --heading-color: #fff;
 }
 
 /* Components */
@@ -191,7 +186,22 @@ td {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-:hover > .permalink {
+:hover > .permalink,
+:focus-within > .permalink {
   transform: translateY(-50%) translateX(0);
   opacity: 1;
+}
+
+/* Links */
+[class*="link-"] {
+  color: var(--link-color);
+  box-shadow: inset 0 -1px 0 0 var(--caption-color);
+}
+
+/* Buttons */
+[class*="button-"] {
+  padding: 0.25rem 0.5rem;
+}
+
+.button-primary {
 }

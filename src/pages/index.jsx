@@ -3,23 +3,15 @@ import { Heading } from "../components/heading";
 import { IconGraph } from "../components/icon-graph";
 import { IconLink } from "../components/icon-link";
 
-/**
- * TODOs:
- * - add lang attr to html
- * - figure out aria landmarks
- */
-
 export default function Index() {
   return (
     <>
       <Head>
         <title>State of Cobalt | 2021</title>
-        {/* TODO: Create favicon */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap"
-          rel="stylesheet"
+        <meta
+          name="description"
+          content="Annual report advocating for human rights within the Cobalt Mining
+          industry."
         />
       </Head>
 
@@ -30,8 +22,14 @@ export default function Index() {
               <Heading level="1" text="State of Cobalt" href="overview" />
               <p>Authored in 2021</p>
               <p>
-                Overview | <a href="#automotive">Automotive</a> |{" "}
-                <a href="#consumer-tech">Consumer Tech</a>
+                Overview |{" "}
+                <a class="link-primary" href="#automotive">
+                  Automotive
+                </a>{" "}
+                |{" "}
+                <a class="link-primary" href="#consumer-tech">
+                  Consumer Tech
+                </a>
               </p>
             </hgroup>
           </section>
@@ -43,8 +41,13 @@ export default function Index() {
               <Heading level="2" text="State of Automotive" href="automotive" />
               <p>State of Cobalt | 2021</p>
               <p>
-                <a href="#overview">Overview</a> | Automotive |{" "}
-                <a href="#consumer-tech">Consumer Tech</a>
+                <a class="link-primary" href="#overview">
+                  Overview
+                </a>{" "}
+                | Automotive |{" "}
+                <a class="link-primary" href="#consumer-tech">
+                  Consumer Tech
+                </a>
               </p>
             </hgroup>
           </section>
@@ -60,8 +63,14 @@ export default function Index() {
               />
               <p>State of Cobalt | 2021</p>
               <p>
-                <a href="#overview">Overview</a> |
-                <a href="#automotive">Automotive</a> | Consumer Tech
+                <a class="link-primary" href="#overview">
+                  Overview
+                </a>{" "}
+                |{" "}
+                <a class="link-primary" href="#automotive">
+                  Automotive
+                </a>{" "}
+                | Consumer Tech
               </p>
             </hgroup>
           </section>
@@ -136,20 +145,28 @@ export default function Index() {
 
             <p>
               <button class="button-primary">Primary Button</button>
+            </p>
 
+            <p>
               <button class="button-secondary">Secondary Button</button>
+            </p>
 
+            <p>
               <button
                 class="button-icon"
                 aria-label="Press to display as Graph"
               >
                 <IconGraph />
               </button>
+            </p>
 
+            <p>
               <a href="#" class="button-primary">
                 Link as Button
               </a>
+            </p>
 
+            <p>
               <a
                 href="#"
                 class="button-icon"
@@ -162,8 +179,8 @@ export default function Index() {
             <p>Test/Example Links:</p>
 
             <p>
-              <a href="#" class="link">
-                Default Link
+              <a href="#" class="link-primary">
+                Primary Link
               </a>
             </p>
 
@@ -187,7 +204,7 @@ export default function Index() {
 
       <footer>
         <nav>
-          <a target="_blank" href="#">
+          <a class="link-primary" href="#">
             About
           </a>
         </nav>

@@ -17,8 +17,8 @@
   --text-color: #333;
   --link-color: #0062eb;
   --heading-color: #222;
-  --caption-color: #777;
-  --accent-color: #aaa;
+  --caption-color: rgba(0, 0, 0, 0.6);
+  --accent-color: rgba(0, 0, 0, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +29,7 @@
     --text-color: #ccc;
     --link-color: #fff;
     --heading-color: #eee;
-    --caption-color: #999;
-    --accent-color: #333;
+    --caption-color: rgba(255, 255, 255, 0.6);
+    --accent-color: rgba(255, 255, 255, 0.2);
   }
 }
