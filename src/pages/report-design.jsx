@@ -7,12 +7,13 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>State of Cobalt | 2021</title>
+        <title>State of Cobalt | Report Design</title>
         <meta
           name="description"
           content="Annual report advocating for human rights within the Cobalt Mining
           industry."
         />
+        <meta property="og:title" content="State of Cobalt | Report Design" />
       </Head>
 
       <main>

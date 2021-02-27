@@ -11,13 +11,15 @@ export default function Index() {
           content="Annual report advocating for human rights within the Cobalt Mining
           industry."
         />
+        <meta property="og:title" content="State of Cobalt | 2021" />
+        <meta name="twitter:card" content="summary" />
       </Head>
 
       <main>
         <article id="overview">
           <section class="hero-1">
             <hgroup>
-              <Heading level="1" text="State of Cobalt" href="overview" />
+              <Heading level="1" text="State of Cobalt" href={null} />
               <p>Authoring in 2021</p>
               <p>
                 Advocating for human rights within the Cobalt Mining industry.
