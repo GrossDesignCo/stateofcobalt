@@ -76,6 +76,7 @@ h5 {
   font-size: var(--font-size--h5);
 }
 
+/* Base Elements */
 a,
 button {
   display: inline-block;
