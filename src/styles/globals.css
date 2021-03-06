@@ -7,14 +7,15 @@
   line-height: 1.65;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   font-size: 100%;
   color: var(--text-color);
   background-color: var(--bg-color);
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 section {
