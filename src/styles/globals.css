@@ -156,31 +156,63 @@ td {
 
 /* Hero */
 .hero {
-  --caption-color: rgba(255, 255, 255, 0.6);
-  --text-color: #eee;
-  --link-color: #fff;
-  --heading-color: #fff;
-
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  background-color: var(--bg-color);
   color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
-#overview {
+.hero hgroup {
+  text-shadow: 2px 2px hsl(0deg 0% 0% / 15%);
+}
+
+.flashy {
+  text-shadow: 2px 2px hsl(0deg 0% 0% / 15%);
+  background-color: var(--bg-color);
+  background-image: var(--bg-gradient);
+}
+
+.cobalt {
   --bg-color: var(--cobalt-blue);
+  --caption-color: rgba(255, 255, 255, 0.6);
+  --text-color: #eee;
+  --link-color: #fff;
+  --heading-color: #fff;
 }
 
-#automotive {
+.slate {
   --bg-color: var(--dark-slate);
+  --caption-color: rgba(255, 255, 255, 0.6);
+  --text-color: #eee;
+  --link-color: #fff;
+  --heading-color: #fff;
 }
 
-#consumer-tech {
-  --bg-color: var(--mango-orange);
+.orange {
+  --bg-gradient: conic-gradient(
+    from 90deg at 40% -25%,
+    #f76503,
+    #ee6907,
+    #e6390a,
+    #de0d0d,
+    #d61039,
+    #cf1261,
+    #c71585,
+    #cf1261,
+    #d61039,
+    #de0d0d,
+    #ee6907,
+    #f77103
+  );
+  --bg-color: var(--blood-orange);
+  --caption-color: rgba(255, 255, 255, 0.6);
+  --text-color: #eee;
+  --link-color: #fff;
+  --heading-color: #fff;
 }
 
 /* Components */
@@ -237,7 +269,7 @@ td {
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
-  background: var(--bg-color);
+  background-color: var(--bg-color);
   color: var(--link-color);
   transition: 0.3s ease;
 }

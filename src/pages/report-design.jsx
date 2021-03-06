@@ -15,11 +15,12 @@ export default () => {
       </Head>
 
       <main>
-        <article id="overview">
+        {/* Start */}
+        <article id="overview" class="cobalt">
           <section class="hero">
             <hgroup>
               <Heading level="1" text="State of Cobalt" href="overview" />
-              <p>Report Design</p>
+              <p>Report Design - Main Hero</p>
               <p>
                 Overview |{" "}
                 <a class="link primary" href="#automotive">
@@ -51,11 +52,12 @@ export default () => {
           </section>
         </article>
 
-        <article id="automotive">
+        {/* Auto */}
+        <article id="automotive" class="slate">
           <section class="hero">
             <hgroup>
               <Heading level="2" text="State of Automotive" href="automotive" />
-              <p>State of Cobalt | 2021</p>
+              <p>Example Muted Hero, H2</p>
               <p>
                 <a class="link primary" href="#overview">
                   Overview
@@ -86,15 +88,16 @@ export default () => {
           </section>
         </article>
 
-        <article id="consumer-tech">
-          <section class="hero">
+        {/* Tech */}
+        <article id="consumer-tech" class="orange">
+          <section class="hero flashy">
             <hgroup>
               <Heading
                 level="2"
                 text="State of Consumer Tech"
                 href="consumer-tech"
               />
-              <p>State of Cobalt | 2021</p>
+              <p>Example Flashy Hero, H2</p>
               <p>
                 <a class="link primary" href="#overview">
                   Overview
@@ -111,7 +114,7 @@ export default () => {
           <section>
             <hgroup>
               <Heading level="3" text="Background" />
-              <p>1.1</p>
+              <p>1.1 (H3)</p>
             </hgroup>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer

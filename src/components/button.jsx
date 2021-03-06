@@ -12,7 +12,14 @@ export const Button = ({ text, href, level, icon, ...rest }) => {
   const Tag = href ? "a" : "button";
 
   return (
-    <Tag href={href} class={cx("button", { [`${level}`]: level })} {...rest}>
+    <Tag
+      href={href}
+      class={cx("button", {
+        [`${level}`]: level,
+        flashy: level === "primary",
+      })}
+      {...rest}
+    >
       {icon}
       {icon && text ? <span>{text}</span> : text}
     </Tag>
