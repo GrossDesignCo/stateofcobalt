@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Heading } from "../components/heading";
 
-export default function Index() {
+export default () => {
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ export default function Index() {
 
       <main>
         <article id="overview">
-          <section class="hero-1">
+          <section class="hero">
             <hgroup>
               <Heading level="1" text="State of Cobalt" href={null} />
               <p>Authoring in 2021</p>
@@ -30,4 +30,4 @@ export default function Index() {
       </main>
     </>
   );
-}
+};
