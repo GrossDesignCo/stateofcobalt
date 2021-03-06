@@ -156,6 +156,11 @@ td {
 
 /* Hero */
 .hero {
+  --caption-color: rgba(255, 255, 255, 0.6);
+  --text-color: #eee;
+  --link-color: #fff;
+  --heading-color: #fff;
+
   height: 100vh;
   width: 100%;
   display: flex;
@@ -178,18 +183,10 @@ td {
 
 .cobalt {
   --bg-color: var(--cobalt-blue);
-  --caption-color: rgba(255, 255, 255, 0.6);
-  --text-color: #eee;
-  --link-color: #fff;
-  --heading-color: #fff;
 }
 
 .slate {
   --bg-color: var(--dark-slate);
-  --caption-color: rgba(255, 255, 255, 0.6);
-  --text-color: #eee;
-  --link-color: #fff;
-  --heading-color: #fff;
 }
 
 .orange {
@@ -209,10 +206,6 @@ td {
     #f77103
   );
   --bg-color: var(--blood-orange);
-  --caption-color: rgba(255, 255, 255, 0.6);
-  --text-color: #eee;
-  --link-color: #fff;
-  --heading-color: #fff;
 }
 
 /* Components */
