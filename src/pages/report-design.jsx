@@ -1,9 +1,7 @@
 import Head from "next/head";
-import { Heading } from "../components/heading";
-import { IconGraph } from "../components/icon-graph";
-import { IconLink } from "../components/icon-link";
+import { Heading, IconLink, Button } from "../components";
 
-export default function Index() {
+export default () => {
   return (
     <>
       <Head>
@@ -18,44 +16,78 @@ export default function Index() {
 
       <main>
         <article id="overview">
-          <section class="hero-1">
+          <section class="hero">
             <hgroup>
               <Heading level="1" text="State of Cobalt" href="overview" />
-              <p>Authored in 2021</p>
+              <p>Report Design</p>
               <p>
                 Overview |{" "}
-                <a class="link-primary" href="#automotive">
+                <a class="link primary" href="#automotive">
                   Automotive
                 </a>{" "}
                 |{" "}
-                <a class="link-primary" href="#consumer-tech">
+                <a class="link primary" href="#consumer-tech">
                   Consumer Tech
                 </a>
               </p>
             </hgroup>
+          </section>
+
+          <section>
+            <p>Test/Example Buttons:</p>
+
+            <p>
+              <Button
+                level="primary"
+                text="Primary Button"
+                onClick={() => alert("You clicked the primary button!")}
+              />{" "}
+              <Button
+                level="secondary"
+                text="Secondary Button"
+                onClick={() => alert("You clicked the secondary button!")}
+              />
+            </p>
           </section>
         </article>
 
         <article id="automotive">
-          <section class="hero-2">
+          <section class="hero">
             <hgroup>
               <Heading level="2" text="State of Automotive" href="automotive" />
               <p>State of Cobalt | 2021</p>
               <p>
-                <a class="link-primary" href="#overview">
+                <a class="link primary" href="#overview">
                   Overview
                 </a>{" "}
                 | Automotive |{" "}
-                <a class="link-primary" href="#consumer-tech">
+                <a class="link primary" href="#consumer-tech">
                   Consumer Tech
                 </a>
               </p>
             </hgroup>
           </section>
+
+          <section>
+            <p>Test/Example Buttons:</p>
+
+            <p>
+              <Button
+                level="primary"
+                text="Primary Button"
+                onClick={() => alert("You clicked the primary button!")}
+              />{" "}
+              <Button
+                level="secondary"
+                text="Secondary Button"
+                onClick={() => alert("You clicked the secondary button!")}
+              />
+            </p>
+          </section>
         </article>
 
         <article id="consumer-tech">
-          <section class="hero-3">
+          <section class="hero">
             <hgroup>
               <Heading
                 level="2"
@@ -64,11 +96,11 @@ export default function Index() {
               />
               <p>State of Cobalt | 2021</p>
               <p>
-                <a class="link-primary" href="#overview">
+                <a class="link primary" href="#overview">
                   Overview
                 </a>{" "}
                 |{" "}
-                <a class="link-primary" href="#automotive">
+                <a class="link primary" href="#automotive">
                   Automotive
                 </a>{" "}
                 | Consumer Tech
@@ -145,45 +177,69 @@ export default function Index() {
             <p>Test/Example Buttons:</p>
 
             <p>
-              <button class="button-primary">Primary Button</button>
+              <Button
+                level="primary"
+                text="Primary Button"
+                onClick={() => alert("You clicked the primary button!")}
+              />{" "}
+              <Button
+                level="secondary"
+                text="Secondary Button"
+                onClick={() => alert("You clicked the secondary button!")}
+              />
             </p>
 
             <p>
-              <button class="button-secondary">Secondary Button</button>
+              <Button
+                level="primary"
+                text="Pimary Button w/ Icon"
+                icon={<IconLink />}
+                onClick={() => alert("You clicked the button with an icon!")}
+              />{" "}
+              <Button
+                level="secondary"
+                icon={<IconLink />}
+                href="#overview"
+                aria-label="Go Somewhere"
+              />
             </p>
 
             <p>
-              <button
-                class="button-icon"
-                aria-label="Press to display as Graph"
-              >
-                <IconGraph />
-              </button>
+              <Button text="Link as primary" level="primary" href="#overview" />{" "}
+              <Button
+                text="Link as secondary"
+                level="secondary"
+                href="#overview"
+              />
             </p>
 
-            <p>
-              <a href="#" class="button-primary">
-                Link as Button
-              </a>
-            </p>
-
-            <p>
-              <a
-                href="#"
-                class="button-icon"
-                aria-label="Press to go somewhere"
-              >
-                <IconLink />
-              </a>
-            </p>
+            <hr />
 
             <p>Test/Example Links:</p>
 
             <p>
-              <a href="#" class="link-primary">
-                Primary Link
-              </a>
+              <a href="#">Unstyled Anchor</a> <button>Unstyled Button</button>
             </p>
+
+            <p>
+              <a href="#" class="link primary">
+                Primary Link
+              </a>{" "}
+              <button href="#" class="link primary">
+                Button as Primary Link
+              </button>
+            </p>
+
+            <p>
+              <a href="#" class="link secondary">
+                Secondary Link
+              </a>{" "}
+              <button href="#" class="link secondary">
+                Button as Secondary Link
+              </button>
+            </p>
+
+            <hr />
 
             <p>
               Quisque rhoncus, turpis quis semper ornare, metus nunc auctor
@@ -205,11 +261,11 @@ export default function Index() {
 
       <footer>
         <nav>
-          <a class="link-primary" href="#">
+          <a class="link primary" href="/about">
             About
           </a>
         </nav>
       </footer>
     </>
   );
-}
+};

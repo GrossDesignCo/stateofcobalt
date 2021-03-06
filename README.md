@@ -47,3 +47,4 @@ Credit for useful things:
 
 1. https://systemuicons.com/
 1. https://nextjs.org/
+1. https://type-scale.com/
