@@ -109,6 +109,21 @@ hr {
   margin: 2rem calc(var(--spacer) * -1);
 }
 
+code {
+  font-family: monospace;
+  background-color: var(--accent-color);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.caption {
+  color: var(--caption-color);
+}
+
 /* Tables */
 .table-wrapper {
   margin: 2rem calc(var(--spacer) * -1);
@@ -124,10 +139,16 @@ table {
   padding: 1rem var(--spacer);
 }
 
+table caption {
+  text-align: start;
+  padding: 1rem var(--spacer) 0;
+}
+
 th,
 td {
   width: max-content;
   white-space: nowrap;
+  border: none;
   padding: 0.5rem 1.414rem;
 }
 
@@ -154,6 +175,10 @@ td {
   font-weight: 700;
 }
 
+table tr.total td {
+  border-top: 1px solid var(--accent-color);
+}
+
 /* Hero */
 .hero {
   --caption-color: rgba(255, 255, 255, 0.6);
@@ -161,7 +186,9 @@ td {
   --link-color: #fff;
   --heading-color: #fff;
 
-  height: 100vh;
+  min-height: calc(
+    100vh - var(--spacer) - var(--font-size--h3) - 2rem - (1.65rem * 2)
+  );
   width: 100%;
   display: flex;
   flex-direction: column;

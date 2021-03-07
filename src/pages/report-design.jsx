@@ -1,7 +1,11 @@
 import Head from "next/head";
+import cx from "classnames";
 import { Heading, IconLink, Button } from "../components";
+import { trimNumber } from "../utils/number-to-sigfig";
+import productionData from "../public/cobalt-production-by-year.json";
 
 export default () => {
+  console.log(trimNumber(93500));
   return (
     <>
       <Head>
@@ -136,7 +140,7 @@ export default () => {
               lacinia hendrerit dui.
             </p>
 
-            <p>This is an example table:</p>
+            <p>This is an example table /w hard-coded data:</p>
 
             <div class="table-wrapper">
               <table>
@@ -258,6 +262,51 @@ export default () => {
               volutpat est quam, sit amet tempor lorem molestie sit amet. In a
               nulla et dui lobortis sagittis. Donec pulvinar laoreet sem.
             </p>
+
+            <p>
+              Example Table w/ Generated data from{" "}
+              <code>public/cobalt-production-by-country.json</code>
+            </p>
+
+            <div class="table-wrapper">
+              <table>
+                <caption>Mine Production by Country (tons)</caption>
+                <thead>
+                  <tr>
+                    <th>Country</th>
+                    {productionData.years.map((year) => (
+                      <th>{year}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(productionData["per-country"]).map(
+                    ([key, data]) => {
+                      return (
+                        <tr>
+                          <td>{key}</td>
+                          {data.map((item) => (
+                            <td>
+                              {trimNumber(item) ?? (
+                                <span class="accent">—</span>
+                              )}
+                            </td>
+                          ))}
+                        </tr>
+                      );
+                    }
+                  )}
+                  <tr class="total">
+                    <td>World</td>
+                    {productionData.world.map((item) => (
+                      <td>
+                        {trimNumber(item) ?? <span class="accent">—</span>}
+                      </td>
+                    ))}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </article>
       </main>

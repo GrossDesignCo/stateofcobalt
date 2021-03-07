@@ -1,0 +1,27 @@
+{
+  "notes": [
+    "Data copied from US Geological Survey: https://www.usgs.gov/centers/nmic/cobalt-statistics-and-information",
+    "Available USGS data goes back to 1996",
+    "Each array represents years going back from the current year",
+    "[null] represents no data for that country and year, either because it's too recent or because the country was counted under 'Other' at the time",
+    "TODO: Matt's data entry used only every other year, go back and cross-validate against the even-year USGS reports"
+  ],
+  "years": [2021, 2020, 2019, 2018, 2017, 2016, 2015],
+  "world": [null, 140000, 144000, 140000, 120000, 123000, 126000],
+  "per-country": {
+    "Australia": [null, 5700, 5740, 4700, 5030, 5100, 6000],
+    "Canada": [null, 3200, 3340, 3800, 3870, 7300, 6900],
+    "China": [null, 2300, 2500, 3100, 3100, 7700, 7700],
+    "Congo (Kinshasa)": [null, 95000, 100000, 90000, 73000, 66000, 63000],
+    "Cuba": [null, 3600, 3800, 4900, 5000, 4200, 4300],
+    "Madagascar": [null, 700, 3400, 3500, 3500, 3300, 3700],
+    "Morocco": [null, 1900, 2300, 2300, 2200, null, null],
+    "Papua New Guinea": [null, 2800, 2910, 3200, 3310, null, null],
+    "New Caledonia": [null, null, null, null, null, 3300, 3680],
+    "Philippines": [null, 4700, 5100, 4600, 4600, 3500, 4300],
+    "Russia": [null, 6300, 6300, 5900, 5900, 6200, 6200],
+    "South Africa": [null, 1800, 2100, 2200, 2300, 3000, 3000],
+    "United States": [null, 600, 500, 500, 640, 690, 760],
+    "Other": [null, 6400, 6320, 7000, 7650, 8300, 11600]
+  }
+}
