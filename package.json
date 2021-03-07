@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export -o docs/ && cp infra/.nojekyll docs/.nojekyll && cp infra/CNAME docs/CNAME",
-    "start": "next start"
+    "start": "next start",
+    "stage": "git add docs/"
   },
   "pre-commit": [
-    "build"
+    "build",
+    "stage"
   ],
   "devDependencies": {
     "change-case": "^4.1.2",
