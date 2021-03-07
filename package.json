@@ -7,11 +7,14 @@
     "build": "next build && next export -o docs/ && cp infra/.nojekyll docs/.nojekyll && cp infra/CNAME docs/CNAME",
     "start": "next start"
   },
-  "pre-commit": "echo 'test'",
+  "pre-commit": [
+    "build"
+  ],
   "devDependencies": {
     "change-case": "^4.1.2",
     "classnames": "^2.2.6",
     "next": "10.0.7",
+    "pre-commit": "^1.2.2",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   }
