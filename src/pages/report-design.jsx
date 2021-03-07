@@ -20,6 +20,7 @@ export default function ReportDesign() {
       </Head>
 
       <main>
+        <p>Test</p>
         {/* Start */}
         <article id="overview" class="cobalt">
           <section class="hero">
