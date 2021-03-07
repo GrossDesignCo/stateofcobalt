@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Heading } from "../components/heading";
 
-export default () => {
+export default function About() {
   return (
     <>
       <Head>
@@ -34,4 +34,4 @@ export default () => {
       </footer>
     </>
   );
-};
+}

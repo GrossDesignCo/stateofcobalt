@@ -1,11 +1,12 @@
 import Head from "next/head";
-import cx from "classnames";
-import { Heading, IconLink, Button } from "../components";
-import { trimNumber } from "../utils/number-to-sigfig";
-import productionData from "../public/cobalt-production-by-year.json";
+import {
+  Heading,
+  IconLink,
+  Button,
+  FigCobaltProductionByCountry,
+} from "../components";
 
-export default () => {
-  console.log(trimNumber(93500));
+export default function ReportDesign() {
   return (
     <>
       <Head>
@@ -265,48 +266,10 @@ export default () => {
 
             <p>
               Example Table w/ Generated data from{" "}
-              <code>public/cobalt-production-by-country.json</code>
+              <code>/cobalt-production-by-country.json</code>
             </p>
 
-            <div class="table-wrapper">
-              <table>
-                <caption>Mine Production by Country (tons)</caption>
-                <thead>
-                  <tr>
-                    <th>Country</th>
-                    {productionData.years.map((year) => (
-                      <th>{year}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {Object.entries(productionData["per-country"]).map(
-                    ([key, data]) => {
-                      return (
-                        <tr>
-                          <td>{key}</td>
-                          {data.map((item) => (
-                            <td>
-                              {trimNumber(item) ?? (
-                                <span class="accent">—</span>
-                              )}
-                            </td>
-                          ))}
-                        </tr>
-                      );
-                    }
-                  )}
-                  <tr class="total">
-                    <td>World</td>
-                    {productionData.world.map((item) => (
-                      <td>
-                        {trimNumber(item) ?? <span class="accent">—</span>}
-                      </td>
-                    ))}
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <FigCobaltProductionByCountry />
           </section>
         </article>
       </main>
@@ -320,4 +283,4 @@ export default () => {
       </footer>
     </>
   );
-};
+}

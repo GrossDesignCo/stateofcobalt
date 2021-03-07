@@ -4,7 +4,7 @@ export const trimNumber = (number) => {
         maximumSignificantDigits: 3,
         notation: "compact",
       })
-        .format(number)
+        .format(number) // tons to lbs
         .toLocaleLowerCase()
     : null;
 };

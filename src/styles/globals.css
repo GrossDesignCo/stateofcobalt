@@ -124,6 +124,10 @@ code {
   color: var(--caption-color);
 }
 
+.small {
+  font-size: 1rem;
+}
+
 /* Tables */
 .table-wrapper {
   margin: 2rem calc(var(--spacer) * -1);
@@ -150,6 +154,7 @@ td {
   white-space: nowrap;
   border: none;
   padding: 0.5rem 1.414rem;
+  font-variant-numeric: tabular-nums;
 }
 
 th:first-child,
@@ -192,7 +197,7 @@ table tr.total td {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   color: var(--text-color);
   background-color: var(--bg-color);
