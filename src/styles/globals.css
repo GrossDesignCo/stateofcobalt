@@ -223,7 +223,7 @@ table tr.total td {
 
 .orange {
   --bg-gradient: conic-gradient(
-    from 90deg at 40% -25%,
+    from 90deg at 40% min(-25%, -100px),
     #f76503,
     #ee6907,
     #e6390a,
