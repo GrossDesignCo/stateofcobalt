@@ -203,6 +203,12 @@ table tr.total td {
   background-color: var(--bg-color);
 }
 
+.fullscreen,
+.fullscreen .hero {
+  height: 100vh;
+  height: --webkit-fll-available;
+}
+
 .hero hgroup {
   text-shadow: 2px 2px hsl(0deg 0% 0% / 15%);
 }

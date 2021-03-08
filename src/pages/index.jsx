@@ -16,14 +16,14 @@ export default function Index() {
       </Head>
 
       <main>
-        <article id="overview">
+        <article id="overview" class="cobalt fullscreen">
           <section class="hero">
             <hgroup>
               <Heading level="1" text="State of Cobalt" href={null} />
-              <p>Authoring in 2021</p>
               <p>
                 Advocating for human rights within the Cobalt Mining industry.
               </p>
+              <p>Authoring in 2021</p>
             </hgroup>
           </section>
         </article>
