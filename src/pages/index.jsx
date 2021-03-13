@@ -1,19 +1,13 @@
-import Head from "next/head";
-import { Heading } from "../components/heading";
+import { Heading, Meta } from "../components";
 
 export default function Index() {
   return (
     <>
-      <Head>
-        <title>State of Cobalt | 2021</title>
-        <meta
-          name="description"
-          content="Annual report advocating for human rights within the Cobalt Mining
+      <Meta
+        title="State of Cobalt"
+        description="Annual report advocating for human rights within the Cobalt Mining
           industry."
-        />
-        <meta property="og:title" content="State of Cobalt | 2021" />
-        <meta name="twitter:card" content="summary" />
-      </Head>
+      />
 
       <main>
         <article id="overview" class="cobalt fullscreen">

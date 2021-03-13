@@ -1,6 +1,23 @@
+/* 
+
+Typeface/Sizing Scale:
+
+5.653rem/90.44px
+3.998rem/63.96px
+2.827rem/45.23px
+1.999rem/31.99px
+1.414rem/22.62px
+1rem/16.00px
+0.707rem/11.32px
+0.5rem/8.00px
+0.354rem/5.66px
+0.25rem/4.00px
+
+*/
 :root {
   --spacer: clamp(2.827rem, 7vw, 5.653rem);
   --icon-size: 1.5em;
+
   --font-size--h1: clamp(2.827rem, 7vw, 5.653rem);
   --font-size--h2: clamp(1.999rem, 4.95vw, 3.998rem);
   --font-size--h3: clamp(1.414rem, 3.5vw, 2.827rem);

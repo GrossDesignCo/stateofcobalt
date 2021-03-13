@@ -296,7 +296,6 @@ table tr.total td {
 
 /* Buttons */
 .button {
-  padding: 0.707rem 1.414rem;
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
@@ -308,6 +307,7 @@ table tr.total td {
 .button.primary {
   --link-color: #fff;
 
+  padding: 0.707rem 1.414rem;
   font-weight: 700;
   font-size: var(--font-size--h5);
   transform: scale(1);
@@ -322,6 +322,8 @@ table tr.total td {
 
 .button.secondary {
   --bg-color: var(--accent-color);
+
+  padding: 0.25rem 0.707rem;
 }
 
 .button.secondary:hover {
@@ -329,15 +331,15 @@ table tr.total td {
 }
 
 .button .icon:first-child {
-  margin-inline-end: 0.707rem;
+  margin-inline-end: 0.354em;
   margin-inline-start: -0.25em;
 }
 
 .button .icon:last-child {
-  margin-inline-start: 0.707rem;
+  margin-inline-start: 0.354em;
   margin-inline-end: -0.25em;
 }
 
 .button .icon:only-child {
-  margin: 0 -0.707rem;
+  margin: 0 -0.5em;
 }

@@ -1,23 +1,9 @@
-import Head from "next/head";
-import {
-  Heading,
-  IconLink,
-  Button,
-  FigCobaltProductionByCountry,
-} from "../components";
+import { Heading, IconLink, Button, Footer, Meta } from "../components";
 
 export default function ReportDesign() {
   return (
     <>
-      <Head>
-        <title>State of Cobalt | Report Design</title>
-        <meta
-          name="description"
-          content="Annual report advocating for human rights within the Cobalt Mining
-          industry."
-        />
-        <meta property="og:title" content="State of Cobalt | Report Design" />
-      </Head>
+      <Meta title="State of Cobalt | Report Design" />
 
       <main>
         {/* Start */}
@@ -204,10 +190,10 @@ export default function ReportDesign() {
                 icon={<IconLink />}
                 onClick={() => alert("You clicked the button with an icon!")}
               />{" "}
+              <Button level="primary" icon={<IconLink />} />{" "}
               <Button
                 level="secondary"
                 icon={<IconLink />}
-                href="#overview"
                 aria-label="Go Somewhere"
               />
             </p>
@@ -263,24 +249,11 @@ export default function ReportDesign() {
               volutpat est quam, sit amet tempor lorem molestie sit amet. In a
               nulla et dui lobortis sagittis. Donec pulvinar laoreet sem.
             </p>
-
-            <p>
-              Example Table w/ Generated data from{" "}
-              <code>/cobalt-production-by-country.json</code>
-            </p>
-
-            <FigCobaltProductionByCountry />
           </section>
         </article>
       </main>
 
-      <footer>
-        <nav>
-          <a class="link primary" href="/about">
-            About
-          </a>
-        </nav>
-      </footer>
+      <Footer />
     </>
   );
 }

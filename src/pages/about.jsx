@@ -1,15 +1,13 @@
-import Head from "next/head";
-import { Heading } from "../components/heading";
+import { Footer, Heading, Meta } from "../components";
 
 export default function About() {
   return (
     <>
-      <Head>
-        <title>State of Cobalt | About</title>
-        <meta name="description" content="About the Project Cobalt group" />
-        <meta property="og:title" content="State of Cobalt | About" />
-        <meta name="twitter:card" content="summary" />
-      </Head>
+      <Meta
+        title="About | State of Cobalt"
+        description="Annual report advocating for human rights within the Cobalt Mining
+          industry."
+      />
 
       <main>
         <article>
@@ -25,13 +23,7 @@ export default function About() {
         </article>
       </main>
 
-      <footer>
-        <nav>
-          <a class="link secondary" href="/">
-            2021 Report
-          </a>
-        </nav>
-      </footer>
+      <Footer />
     </>
   );
 }
