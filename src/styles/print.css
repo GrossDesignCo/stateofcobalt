@@ -1,0 +1,51 @@
+@media print {
+  @page {
+    margin: 3.998rem auto;
+  }
+
+  :root,
+  .hero {
+    --bg-color: #fff;
+    --text-color: #000;
+    --link-color: #000;
+    --heading-color: #000;
+    --accent-color: #eee;
+
+    --font-size--h1: 2.827rem;
+    --font-size--h2: 1.999rem;
+    --font-size--h3: 1.414rem;
+    --font-size--h4: 1rem;
+    --font-size--h5: 1rem;
+  }
+
+  html {
+    font-size: 10pt;
+  }
+
+  /* Hide web-specific elements */
+  footer,
+  button,
+  .button {
+    display: none;
+  }
+
+  /* Display urls only for external links */
+  a[href*="/"]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .hero {
+    min-height: 0;
+  }
+
+  /* Elements that shouldn't break between pages */
+  .hero,
+  hgroup {
+    break-inside: avoid-page;
+  }
+
+  /* Denser table styles */
+  td {
+    font-size: 1rem;
+  }
+}

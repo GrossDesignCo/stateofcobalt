@@ -8,12 +8,12 @@
 }
 
 html {
+  font-size: 100%;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
 body {
-  font-size: 100%;
   color: var(--text-color);
   background-color: var(--bg-color);
 }
@@ -52,28 +52,23 @@ h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 5.653rem;
-  font-size: var(--font-size--h1);
+  font-size: var(--font-size--h1, 5.653rem);
 }
 
 h2 {
-  font-size: 3.998rem;
-  font-size: var(--font-size--h2);
+  font-size: var(--font-size--h2, 3.998rem);
 }
 
 h3 {
-  font-size: 2.827rem;
-  font-size: var(--font-size--h3);
+  font-size: var(--font-size--h3, 2.827rem);
 }
 
 h4 {
-  font-size: 1.999rem;
-  font-size: var(--font-size--h4);
+  font-size: var(--font-size--h4, 1.999rem);
 }
 
 h5 {
-  font-size: 1.414rem;
-  font-size: var(--font-size--h5);
+  font-size: var(--font-size--h5, 1.414rem);
 }
 
 /* Base Elements */
@@ -175,8 +170,7 @@ th {
 
 td {
   color: var(--heading-color);
-  font-size: 1.414rem;
-  font-size: var(--font-size--h5);
+  font-size: var(--font-size--h5, 1.414rem);
   font-weight: 700;
 }
 
