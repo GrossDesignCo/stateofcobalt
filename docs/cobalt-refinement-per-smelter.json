@@ -1,0 +1,95 @@
+{
+  "notes": [
+    "Data copied from Responsible Minerals Initiative: http://www.responsiblemineralsinitiative.org/cobalt-refiners-list/",
+    "Conformant Refiners: http://www.responsiblemineralsinitiative.org/responsible-minerals-assurance-process/smelter-refiner-lists/cobalt-refiners-list/conformant-cobalt-refiners/",
+    "Active Refiners: http://www.responsiblemineralsinitiative.org/responsible-minerals-assurance-process/smelter-refiner-lists/cobalt-refiners-list/active-cobalt-refiners/",
+    "NOTE: Apparently none of the active smelters are on the conformant list..."
+  ],
+  "headers": [
+    "Name",
+    "Country",
+    "City",
+    "Crude?",
+    "Conformant?",
+    "Actively Refining Cobalt?"
+  ],
+  "byCountry": {
+    "Australia": [],
+    "Belgium": [],
+    "China": [],
+    "Congo": [],
+    "Finland": [],
+    "Korea": [],
+    "Morocco": [],
+    "Taiwan": []
+  },
+  "refiners": [
+    ["Chemaf Etoile", "Congo", "Lubumbashi", null, true, false],
+    ["Chemaf Usoke", "Congo", "Lubumbashi", null, true, false],
+    [
+      "Compagnie de Tifnout Tiranimine",
+      "Morocco",
+      "Marrakech",
+      null,
+      true,
+      false
+    ],
+    ["CoreMax Corporation", "Taiwan", "Toufen", null, true, false],
+    [
+      "Ganzhou Tengyuan Cobalt New Material Co., Ltd.",
+      "China",
+      "Ganzhou",
+      null,
+      true,
+      false
+    ],
+    [
+      "Guangdong Jiana Energy Technology Co., Ltd.",
+      "China",
+      "Guangzhou",
+      null,
+      true,
+      false
+    ],
+    [
+      "Hunan CNGR New Energy Science & Technology Co., Ltd.",
+      "China",
+      "Changsha",
+      null,
+      true,
+      false
+    ],
+    ["Kamoto Copper Company", "Congo", "Kolwezi", null, true, false],
+    ["Mine de Bou-Azzer", "Morocco", "Tazenakht", null, true, false],
+    [
+      "Murrin Murrin Nickel Cobalt Plant",
+      "Austrailia",
+      "Laverton",
+      null,
+      true,
+      false
+    ],
+    ["SungEel HiTech Co., Ltd.", "Korea", "Gunsan-si", null, true, false],
+    ["Umicore Finland Oy", "Finland", "Kokkola", null, true, false],
+    ["Umicore Olen", "Belgium", "Olen", null, true, false],
+    [
+      "-------------------------------------------------------------------------"
+    ],
+    [
+      "Chizhou CN New Materials and Technology Co., Ltd.",
+      "China",
+      "Chizhou",
+      false
+    ],
+    ["Cosmo EcoChem Co., Ltd.", "Korea", "Ulsan", false],
+    ["Ganzhou Highpower Technology Co., Ltd.", "China", "Ganzhou", false],
+    ["Gem (Jiangsu) Cobalt Industry Co., Ltd.", "China", "Taixing", false],
+    ["Guangxi Yinyi Advanced Material Co., Ltd.", "China", "Yulin", false],
+    [
+      "Guizhou CNGR Resource Recycling Industry Development Co., Ltd.",
+      "China",
+      "Tongren",
+      false
+    ]
+  ]
+}

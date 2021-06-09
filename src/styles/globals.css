@@ -71,6 +71,10 @@ h5 {
   font-size: var(--font-size--h5, 1.414rem);
 }
 
+* + :where(h1, h2, h3, h4, h5, h6) {
+  margin-top: 1em;
+}
+
 /* Base Elements */
 a,
 button {
@@ -86,7 +90,7 @@ a {
   text-decoration: none;
 }
 
-svg {
+.icon {
   height: var(--icon-size);
   width: var(--icon-size);
 }

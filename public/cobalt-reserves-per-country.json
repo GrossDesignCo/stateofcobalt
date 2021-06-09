@@ -1,0 +1,22 @@
+{
+  "notes": [
+    "Data copied from US Geological Survey: https://www.usgs.gov/centers/nmic/cobalt-statistics-and-information",
+    "Data specifically pulled from 2021 Cobalt Statistics Pub: https://pubs.usgs.gov/periodicals/mcs2021/mcs2021-cobalt.pdf"
+  ],
+  "world": 7100000,
+  "perCountry": {
+    "Australia": 1400000,
+    "Canada": 220000,
+    "China": 80000,
+    "Congo (Kinshasa)": 3600000,
+    "Cuba": 500000,
+    "Madagascar": 100000,
+    "Morocco": 14000,
+    "Papua New Guinea": 51000,
+    "Philippines": 260000,
+    "Russia": 250000,
+    "South Africa": 40000,
+    "United States": 53000,
+    "Other": 560000
+  }
+}
