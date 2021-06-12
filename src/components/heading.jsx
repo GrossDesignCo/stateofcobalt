@@ -5,7 +5,12 @@ const copyPermalink = (href) => {
   return navigator.clipboard.writeText(`${window.location.origin}#${href}`);
 };
 
-export const Heading = ({ level, text, href = paramCase(text), noAnchor }) => {
+export const Heading = ({
+  level,
+  children,
+  href = paramCase(children.toString()),
+  noAnchor,
+}) => {
   const Tag = `h${level}`;
 
   return (
@@ -22,7 +27,7 @@ export const Heading = ({ level, text, href = paramCase(text), noAnchor }) => {
           </a>
         )}
 
-        {text}
+        {children}
       </Tag>
     </>
   );

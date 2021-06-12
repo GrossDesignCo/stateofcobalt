@@ -13,7 +13,9 @@ export default function About() {
         <article>
           <section>
             <hgroup>
-              <Heading level="1" text="About" href={null} />
+              <Heading level="1" href={null}>
+                About
+              </Heading>
               <p>State of Cobalt | 2021</p>
               <p>
                 Advocating for human rights within the Cobalt Mining industry.

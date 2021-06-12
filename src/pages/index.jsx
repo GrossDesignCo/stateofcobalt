@@ -13,7 +13,9 @@ export default function Index() {
         <article id="overview" class="cobalt fullscreen">
           <section class="hero">
             <hgroup>
-              <Heading level="1" text="State of Cobalt" noAnchor />
+              <Heading level="1" noAnchor>
+                State of Cobalt
+              </Heading>
               <p>
                 Advocating for human rights within the Cobalt Mining industry.
               </p>

@@ -10,7 +10,9 @@ export default function ReportDesign() {
         <article id="overview" class="cobalt">
           <section class="hero">
             <hgroup>
-              <Heading level="1" text="State of Cobalt" href="overview" />
+              <Heading level="1" href="overview">
+                State of Cobalt
+              </Heading>
               <p>Report Design - Main Hero</p>
               <p>
                 Overview |{" "}
@@ -47,7 +49,9 @@ export default function ReportDesign() {
         <article id="automotive" class="slate">
           <section class="hero">
             <hgroup>
-              <Heading level="2" text="State of Automotive" href="automotive" />
+              <Heading level="2" href="automotive">
+                State of Automotive
+              </Heading>
               <p>Example Muted Hero, H2</p>
               <p>
                 <a class="link primary" href="#overview">
@@ -83,11 +87,9 @@ export default function ReportDesign() {
         <article id="consumer-tech" class="orange">
           <section class="hero flashy">
             <hgroup>
-              <Heading
-                level="2"
-                text="State of Consumer Tech"
-                href="consumer-tech"
-              />
+              <Heading level="2" href="consumer-tech">
+                State of Consumer Tech
+              </Heading>
               <p>Example Flashy Hero, H2</p>
               <p>
                 <a class="link primary" href="#overview">
@@ -104,7 +106,7 @@ export default function ReportDesign() {
 
           <section>
             <hgroup>
-              <Heading level="3" text="Background" />
+              <Heading level="3">Background</Heading>
               <p>1.1 (H3)</p>
             </hgroup>
             <p>
