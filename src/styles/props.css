@@ -15,7 +15,8 @@ Typeface/Sizing Scale:
 
 */
 :root {
-  --spacer: clamp(2.827rem, 7vw, 5.653rem);
+  --spacer: clamp(1.414rem, 7vw, 5.653rem);
+  --spacer-lg: clamp(2.827rem, 14vw, 5.653rem);
   --icon-size: 1.5em;
 
   --font-size--h1: clamp(2.827rem, 7vw, 5.653rem);
@@ -48,5 +49,12 @@ Typeface/Sizing Scale:
     --heading-color: #eee;
     --caption-color: rgba(255, 255, 255, 0.6);
     --accent-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --spacer: clamp(1.414rem, 7vw, 5.653rem);
+    --spacer-lg: clamp(2.827rem, 14vw, 5.653rem);
   }
 }

@@ -51,7 +51,7 @@ export default function FigCobaltReservesByCountry() {
         <tbody>
           {countriesList.map(([country, value]) => (
             <tr>
-              <th>{country}</th>
+              <th scope="row">{country}</th>
               <td>
                 <span>{trimNumber(value)}</span>{" "}
                 <span class="accent small">
@@ -63,7 +63,7 @@ export default function FigCobaltReservesByCountry() {
           ))}
           <tr></tr>
           <tr class="total">
-            <td>World</td>
+            <th scope="row">World</th>
             <td>{trimNumber(world)}</td>
           </tr>
         </tbody>

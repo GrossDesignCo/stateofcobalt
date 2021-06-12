@@ -16,7 +16,7 @@ export default function Index2021() {
           <section class="hero">
             <hgroup>
               <Heading level="1" href="overview">
-                State of Cobalt
+                The State of Cobalt
               </Heading>
               <p>Report for 2021</p>
             </hgroup>
@@ -109,7 +109,7 @@ export default function Index2021() {
               <Heading level="1" noAnchor>
                 The Global Need
               </Heading>
-              <p>The best course to take in 2021</p>
+              <p>Cobalt demand and the tech boom</p>
             </hgroup>
           </section>
 
@@ -261,6 +261,7 @@ export default function Index2021() {
               <Heading level="1" noAnchor>
                 The Supply Chain
               </Heading>
+              <p>Dirt > ??? > Proft</p>
             </hgroup>
           </section>
 
@@ -431,6 +432,15 @@ export default function Index2021() {
               We are all accountable for the aspects of the supply chain we
               control, and it’s up to us to make our actions fall within a more
               responsible framework.
+            </p>
+
+            <Heading level="2">Manufacturers</Heading>
+
+            <p>
+              Refined cobalt is then shipped all over the world to
+              component-level manufacturers, where the refined material is
+              stamped, spun, fabricated, casted and inlaid into nearly every
+              product in the modern world.
             </p>
           </section>
         </article>

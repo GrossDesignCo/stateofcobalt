@@ -53,7 +53,7 @@ export default function FigCobaltProductionByCountry() {
             if (expanded || highlightedCountries.includes(key)) {
               return (
                 <tr key={key}>
-                  <th>{key}</th>
+                  <th scope="row">{key}</th>
                   {data.map((item, i) => {
                     const percent = (item / world[i]) * 100;
 
