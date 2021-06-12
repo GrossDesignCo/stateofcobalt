@@ -156,94 +156,71 @@ export default function Index2021() {
               cobalt supports.
             </p>
 
+            <Heading level="3">Energy</Heading>
+
             <ul>
               <li>
-                <div>
-                  <strong>Energy</strong>
-                </div>
-                <ul>
-                  <li>
-                    Large-scale Lithium-ion batteries (electric vehicles, green
-                    infrastructure)
-                  </li>
-                  <li>Consumer electronics (phones, laptops, etc.)</li>
-                  <li>Solar panels and other photovoltaic cells</li>
-                  <li>
-                    Clean fuel technologies (the catalytic properties of cobalt
-                    allow it to desulphurize hydrocarbons, producing cleaner
-                    fuel.)
-                  </li>
-                  <li>
-                    Removal of nitrous oxide, mitigating greenhouse gasses.
-                  </li>
-                </ul>
+                Large-scale Lithium-ion batteries (electric vehicles, green
+                infrastructure)
               </li>
-
+              <li>Consumer electronics (phones, laptops, etc.)</li>
+              <li>Solar panels and other photovoltaic cells</li>
               <li>
-                <div>
-                  <strong>Manufacturing & Industry</strong>
-                </div>
-                <ul>
-                  <li>
-                    Creates effective tools for cutting hard materials (ie.
-                    Diamonds)
-                  </li>
-                  <li>
-                    Cobalt-chloride can be used as an alloy with other metals to
-                    increase durability and wear, especially in hot,
-                    pressurized, or acidic environments.
-                  </li>
-                  <li>Magnets</li>
-                  <li>Electroplating</li>
-                  <li>Jet turbines and gas turbine generators</li>
-                </ul>
+                Clean fuel technologies (the catalytic properties of cobalt
+                allow it to desulphurize hydrocarbons, producing cleaner fuel.)
               </li>
+              <li>Removal of nitrous oxide, mitigating greenhouse gasses.</li>
+            </ul>
 
+            <Heading level="3">Manufacturing & Industry</Heading>
+            <ul>
               <li>
-                <div>
-                  <strong>Medicine</strong>
-                </div>
-                <ul>
-                  <li>
-                    Nanoparticles used to enhance imaging and sensors (eg. MRIs)
-                  </li>
-                  <li>Site-specific drug delivery for cancer treatments</li>
-                  <li>
-                    Radioactive Cobalt-60 is a source of gamma rays used in
-                    radiation-therapies for cancer treatment, to sterilize
-                    medical supplies, and to preserve food
-                  </li>
-                  <li>Compact medical electronics (eg. hearing aids)</li>
-                  <li>
-                    Orthopedic implants (eg. cobalt-chrome femoral stems, used
-                    in hip-replacements)
-                  </li>
-                </ul>
+                Creates effective tools for cutting hard materials (ie.
+                Diamonds)
               </li>
-
               <li>
-                <div>
-                  <strong>Militaries</strong>
-                </div>
-                <ul>
-                  <li>
-                    Absorbs high frequency millimeter waves, visible light and
-                    infrared.
-                  </li>
-                  <li>Aerospace parts</li>
-                </ul>
+                Cobalt-chloride can be used as an alloy with other metals to
+                increase durability and wear, especially in hot, pressurized, or
+                acidic environments.
               </li>
+              <li>Magnets</li>
+              <li>Electroplating</li>
+              <li>Jet turbines and gas turbine generators</li>
+            </ul>
+            <Heading level="3">Medicine</Heading>
 
+            <ul>
               <li>
-                <div>
-                  <strong>Agriculture</strong>
-                </div>
-                <ul>
-                  <li>
-                    Cobalt can be added to nutrient-poor soil, increasing cobalt
-                    in animal consumption, preventing “wasting disease.”
-                  </li>
-                </ul>
+                Nanoparticles used to enhance imaging and sensors (eg. MRIs)
+              </li>
+              <li>Site-specific drug delivery for cancer treatments</li>
+              <li>
+                Radioactive Cobalt-60 is a source of gamma rays used in
+                radiation-therapies for cancer treatment, to sterilize medical
+                supplies, and to preserve food
+              </li>
+              <li>Compact medical electronics (eg. hearing aids)</li>
+              <li>
+                Orthopedic implants (eg. cobalt-chrome femoral stems, used in
+                hip-replacements)
+              </li>
+            </ul>
+
+            <Heading level="3">Militaries</Heading>
+
+            <ul>
+              <li>
+                Absorbs high frequency millimeter waves, visible light and
+                infrared.
+              </li>
+              <li>Aerospace parts</li>
+            </ul>
+
+            <Heading level="3">Agriculture</Heading>
+            <ul>
+              <li>
+                Cobalt can be added to nutrient-poor soil, increasing cobalt in
+                animal consumption, preventing “wasting disease.”
               </li>
             </ul>
 

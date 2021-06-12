@@ -32,9 +32,16 @@ footer {
 }
 
 /* Typography */
-p {
+p,
+ol,
+ul {
   margin-bottom: 1rem;
   max-width: 50ch;
+}
+
+ol,
+ul {
+  padding-inline-start: 1.414rem;
 }
 
 h1,
@@ -156,29 +163,41 @@ td {
   font-variant-numeric: tabular-nums;
 }
 
-th:first-child,
-td:first-child {
+:is(th, td):first-child {
   padding-inline-start: 0;
+  position: sticky;
+  inset-inline-start: 1rem;
+  backdrop-filter: blur(10px);
 }
 
-th:last-child,
-td:last-child {
+:is(th, td):first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  width: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+:is(th, td):last-child {
   padding-inline-end: 0;
 }
 
-th {
+thead th {
   color: var(--caption-color);
   text-align: start;
   font-weight: 400;
 }
 
-td {
+tbody :is(th, td) {
   color: var(--heading-color);
   font-size: var(--font-size--h5, 1.414rem);
   font-weight: 700;
+  text-align: start;
 }
 
-table tr.total td {
+table tr.total :is(th, td) {
   border-top: 1px solid var(--accent-color);
 }
 

@@ -53,7 +53,7 @@ export default function FigCobaltProductionByCountry() {
             if (expanded || highlightedCountries.includes(key)) {
               return (
                 <tr key={key}>
-                  <td>{key}</td>
+                  <th>{key}</th>
                   {data.map((item, i) => {
                     const percent = (item / world[i]) * 100;
 
@@ -80,7 +80,7 @@ export default function FigCobaltProductionByCountry() {
           })}
 
           <tr class="total">
-            <td>World</td>
+            <th>World</th>
             {world.map((item) => (
               <td key={item}>
                 {trimNumber(item) ?? <span class="accent">—</span>}
