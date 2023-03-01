@@ -1,5 +1,7 @@
 # State of Cobalt
 
+stateofcobalt.org/2021
+
 This is a working draft of a research project, more info to follow :)
 
 ## Local Setup
