@@ -1,6 +1,6 @@
 # State of Cobalt
 
-stateofcobalt.org/2021
+[stateofcobalt.org/2021](https://stateofcobalt.org/2021)
 
 This is a working draft of a research project, more info to follow :)
 
