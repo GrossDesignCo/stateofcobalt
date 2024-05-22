@@ -2,7 +2,7 @@
 
 [stateofcobalt.org/2021](https://stateofcobalt.org/2021)
 
-This is a working draft of a research project, more info to follow :)
+This is a working draft of a research project, supporting a local internship program :)
 
 ## Local Setup
 
