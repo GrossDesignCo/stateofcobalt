@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o docs/ && cp infra/.nojekyll docs/.nojekyll && cp infra/CNAME docs/CNAME",
+    "build": "next build",
     "start": "next start",
     "stage": "git add docs/"
   },
@@ -13,11 +13,11 @@
     "stage"
   ],
   "devDependencies": {
-    "change-case": "^4.1.2",
-    "classnames": "^2.2.6",
-    "next": "^10.2.0",
+    "change-case": "^5.4.4",
+    "classnames": "^2.5.1",
+    "next": "^14.2.5",
     "pre-commit": "^1.2.2",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

@@ -1,5 +1,5 @@
-import { IconLink } from "./icon-link";
-import { paramCase } from "change-case";
+import { IconLink } from './icon-link';
+import { kebabCase } from 'change-case';
 
 const copyPermalink = (href) => {
   return navigator.clipboard.writeText(`${window.location.origin}#${href}`);
@@ -8,7 +8,7 @@ const copyPermalink = (href) => {
 export const Heading = ({
   level,
   children,
-  href = paramCase(children.toString()),
+  href = kebabCase(children.toString()),
   noAnchor,
 }) => {
   const Tag = `h${level}`;

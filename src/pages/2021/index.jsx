@@ -1,6 +1,6 @@
-import { Footer, Meta, Heading } from "../../components";
-import FigCobaltProductionPerCountry from "./fig-cobalt-production-per-country";
-import FigCobaltReservesPerCountry from "./fig-cobalt-reserves-per-country";
+import { Footer, Meta, Heading } from '../../components';
+import FigCobaltProductionPerCountry from './fig-cobalt-production-per-country';
+import FigCobaltReservesPerCountry from './fig-cobalt-reserves-per-country';
 // import FigCobaltProductionGraph from "./fig-cobalt-production-graph";
 
 export default function Index2021() {
@@ -261,7 +261,9 @@ export default function Index2021() {
               <Heading level="1" noAnchor>
                 The Supply Chain
               </Heading>
-              <p>Dirt > ??? > Proft</p>
+              <p>
+                Dirt {'>'} ??? {'>'} Proft
+              </p>
             </hgroup>
           </section>
 
@@ -300,13 +302,13 @@ export default function Index2021() {
             <p>
               An Anglo-Swiss multinational corporation, Glencore owns some of
               the largest copper/cobalt mines in the DRC. In 2020, they produced
-              just under{" "}
+              just under{' '}
               <a
                 class="link"
                 href="https://www.reuters.com/article/us-glencore-outlook-idINKBN2A30UI"
               >
                 28,000
-              </a>{" "}
+              </a>{' '}
               tons of cobalt, despite closures of their largest mine, Mutanda
               due to Covid-19.
             </p>
@@ -315,7 +317,7 @@ export default function Index2021() {
 
             <p>
               State owned Congolese mining company, who owns a 20 percent stake
-              in the Tenke Fungurume mine. Most recently in{" "}
+              in the Tenke Fungurume mine. Most recently in{' '}
               <a
                 href="https://www.spglobal.com/platts/en/market-insights/latest-news/metals/033121-state-company-to-buy-all-drc-artisanally-mined-cobalt-partners-with-trafigura#:~:text=Its%20production%20of%2094%2C000%20mt,Takis%20said%20on%20the%20webinar."
                 class="link"
@@ -332,13 +334,13 @@ export default function Index2021() {
 
             <p>
               The Chinese company owns a majority of the Tenke fungurume mine in
-              the DRC, and produced{" "}
+              the DRC, and produced{' '}
               <a
                 href="https://www.reuters.com/article/cmoc-results/china-moly-boosts-q3-cobalt-output-by-around-20-from-previous-quarter-idUSL4N2HJ2K7"
                 class="link"
               >
                 10,500 tons
-              </a>{" "}
+              </a>{' '}
               of cobalt in the first 3 quarters of 2020.
             </p>
 
@@ -346,10 +348,10 @@ export default function Index2021() {
 
             <p>
               A brazilian mining company with operations predominantly located
-              in Canadian nickel mines, produced nearly{" "}
+              in Canadian nickel mines, produced nearly{' '}
               <a href="https://www.statista.com/statistics/1172053/vale-cobalt-production/#:~:text=The%20Brazilian%20mining%20company%20Vale,New%20Caledonia%20and%20other%20locadtions">
                 5,000 tons
-              </a>{" "}
+              </a>{' '}
               of cobalt as a byproduct of nickel production.
             </p>
 
@@ -370,13 +372,13 @@ export default function Index2021() {
 
             <p>
               Of the 100,000 tons of cobalt produced in the DRC each year,
-              artisanal mining accounts for around{" "}
+              artisanal mining accounts for around{' '}
               <a
                 href="https://www.spglobal.com/platts/en/market-insights/latest-news/metals/033121-state-company-to-buy-all-drc-artisanally-mined-cobalt-partners-with-trafigura#:~:text=Its%20production%20of%2094%2C000%20mt,Takis%20said%20on%20the%20webinar."
                 class="link"
               >
                 15-30,000
-              </a>{" "}
+              </a>{' '}
               of that number. Approximately 150,000 miners source that amount of
               cobalt by mining land owned by the large companies, from ZEAs, or
               from homemade mine shafts around their living situations.
@@ -386,7 +388,7 @@ export default function Index2021() {
               From these mines, artisanal miners take it to markets, where
               cobalt is bought by licensed buyers, and taken either to larger
               corporations who then transfer it back to China or other nearby
-              countries to be refined and transformed into usable products.{" "}
+              countries to be refined and transformed into usable products.{' '}
             </p>
 
             <Heading level="2">Smelters & Refiners</Heading>
@@ -409,7 +411,7 @@ export default function Index2021() {
 
             <p>
               For a full list of smelters and refiners, whether active,
-              conformant, or no longer operating, see{" "}
+              conformant, or no longer operating, see{' '}
               <a
                 href="http://www.responsiblemineralsinitiative.org/smelters-refiners-lists/#mineralchart"
                 class="link"
@@ -563,7 +565,7 @@ export default function Index2021() {
               sustainable, and more ethical in their sourcing of tin, and the
               workers and processes they employ. PACT implements their supply
               chain initiative, which promotes the traceability for tungsten,
-              tantalum, and of course, tin.{" "}
+              tantalum, and of course, tin.{' '}
             </p>
 
             <Heading level="3">Bare Minimum</Heading>
@@ -722,19 +724,19 @@ export default function Index2021() {
       <Footer>
         <a href="#overview" class="link">
           Overview
-        </a>{" "}
-        |{" "}
+        </a>{' '}
+        |{' '}
         <a href="#global-need" class="link">
           The Global Need
-        </a>{" "}
-        |{" "}
+        </a>{' '}
+        |{' '}
         <a href="#supply-chain" class="link">
           The Suppply Chain
-        </a>{" "}
-        |{" "}
+        </a>{' '}
+        |{' '}
         <a href="#calls-to-action" class="link">
           Calls to Action
-        </a>{" "}
+        </a>{' '}
       </Footer>
     </>
   );

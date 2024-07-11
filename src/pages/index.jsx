@@ -1,4 +1,5 @@
-import { Heading, Meta } from "../components";
+import Link from 'next/link';
+import { Heading, Meta } from '../components';
 
 export default function Index() {
   return (
@@ -19,7 +20,11 @@ export default function Index() {
               <p>
                 Advocating for human rights within the Cobalt Mining industry.
               </p>
-              <p>Authoring in 2021</p>
+              <p>
+                <Link className="link primary" href="/2021">
+                  View Report for 2021
+                </Link>
+              </p>
             </hgroup>
           </section>
         </article>
